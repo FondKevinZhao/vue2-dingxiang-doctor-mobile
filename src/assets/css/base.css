@@ -1,0 +1,62 @@
+/* css 初始化文件 */
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  border: 0;
+}
+
+html {
+  font-size: 13.33333333vw;
+}
+
+/* 
+  移动端布局：使用vh+vw的布局  100vw = 750px
+    1. html {
+         font-size: 13.33333333vw;
+       }
+       
+    2. 防止字体过大 
+      @media (min-width: 640px) {
+        html {
+          font-size: 100px;
+        }
+      }
+    3. body {
+          max-width: 750;
+          margin: 0 auto;
+        }
+*/
+
+body {
+  font-size: 14px;
+  font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+}
+
+/* 防止字体过大 */
+@media (min-width: 640px) {
+  html {
+    font-size: 100px;
+  }
+}
